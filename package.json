@@ -1,12 +1,16 @@
 {
   "name": "amazona",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo : https://amazonaapp.herokuapp.com/",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js",
     "build": "rm -rf dist && babel backend -d dist",
     "heroku-postbuild": "npm run build && cd frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choton654/amazona_MERN.git"
   },
   "author": "",
   "license": "ISC",
@@ -22,8 +26,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.18"
+    "mongoose": "^5.9.18",
+    "path": "^0.12.7"
   },
+  "homepage": "https://github.com/choton654/amazona_MERN#readme",
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"

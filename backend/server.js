@@ -1,5 +1,6 @@
 import express from 'express';
 import data from './data';
+import path from 'path';
 import config from './config';
 import mongoose from 'mongoose';
 import userRoutes from './routes/userRoutes';
